@@ -2,6 +2,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+import pylab
 
 plt.show()
 ''' Create the background for the setup and plot the same'''
@@ -129,3 +130,4 @@ plt.hist(Sloping4200, bins=15, range =(110,140), alpha = 0.5, color = "green")  
 plt.hist(gauss30, bins=15, range =(110,140), alpha = 0.5, color = "red")            #Plotting the Higgs Signal
 plt.errorbar(centers10percent, values10percent, yerr = errors10percent, ls='None', marker ='x', color = 'black', markersize= 6.0 ) #Plotting the error
 plt.title("Total with Sloping Background from 4200 events (10%) + Errors", backgroundcolor = "white")
+pylab.show()
