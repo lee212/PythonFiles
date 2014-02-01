@@ -1,6 +1,7 @@
 '''This file contains code for a the Unit "A Calculated Dice Roll. It explains random number generation'''
 import numpy as np
 import matplotlib.pyplot as plt
+import pylab
 
 plt.show()
 
@@ -26,3 +27,5 @@ np.random.seed(seed=7654321)                                            #Set the
 Base3 = 110 + 30* np.random.rand(42000)                                 #Generate the third set of 42000 numbers between 110 and 140.
 plt.hist(Base3, bins=15, range =(110,140), alpha = 0.5, color="red")    #Plot the third set.
 plt.title("Three distinct histograms as different random numbers")
+# For Agg backend
+plylab.show()
