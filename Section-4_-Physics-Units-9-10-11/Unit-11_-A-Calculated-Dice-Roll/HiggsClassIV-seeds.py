@@ -28,4 +28,4 @@ Base3 = 110 + 30* np.random.rand(42000)                                 #Generat
 plt.hist(Base3, bins=15, range =(110,140), alpha = 0.5, color="red")    #Plot the third set.
 plt.title("Three distinct histograms as different random numbers")
 # For Agg backend
-plylab.show()
+pylab.show()
