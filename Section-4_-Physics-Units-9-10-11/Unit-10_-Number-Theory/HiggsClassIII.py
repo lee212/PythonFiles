@@ -2,6 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.special import ndtri
+import pylab
 
 '''Method that returns returns value of the gaussian given an input array and mean and standard deviation'''
 def Normal(x, mu,sigma):
@@ -259,3 +260,5 @@ plt.annotate('99 percent', xycoords="data", textcoords='offset points', arrowpro
 plt.annotate('One Sigma', xycoords="data", textcoords='offset points', xy = (xbar250B[0],ybar250B[0]), xytext = (-120,30), arrowprops=dict(facecolor='black', arrowstyle="->"))
 plt.annotate('One Sigma', xycoords="data", textcoords='offset points', xy = (xbar250B[1],ybar250B[1]), xytext = (30,30), arrowprops=dict(facecolor='black', arrowstyle="->"))
 plt.title("250 Events Counted 4000 times. Another Seed", backgroundcolor = "white")
+#For Agg backen
+pylab.show()
